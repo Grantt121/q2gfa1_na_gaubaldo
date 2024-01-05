@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 1em;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #vidbg {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            z-index: -1;
+        }
+
+        .content {
+            padding: 4em;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            
+        }
+        
+        .icons{
+        text-align: center;
+        }
+
+        .icon{
+        background: url(sprite3.png) no-repeat;
+        width: 66px;
+        height: 66px;
+        display: inline-block;
+        margin-top: 40vh;
+        text-align: center;
+        }
+
+        #fb{
+        background-position: -439px -146px;
+        }
+
+        #twitter{
+        background-position: -66px -72px;
+        }
+
+        #skype{
+        background-position: -365px -147px;
+        }
+
+        #venmo{
+        background-position: -67px -147px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">More</a>
+                <div class="dropdown-content">
+                    <a href="#">Booking</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Help</a>
+                    <a href="#">Sign in</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<video id="vidbg" autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div class="content">
+    <h1>Welcome to Grant's Tour Services</h1>
+    <p><b>Our offers, for this season, is a full tour to the NIAGRA FALLS!</b></p>
+</div>
+
+<a href="">
+<div class="icons">
+<div class="icon" id="fb"></div>
+<div class="icon" id="twitter"></div>
+<div class="icon" id="skype"></div>
+<div class="icon" id="venmo"></div>
+</div>
+</a>
+
+</body>
+</html>
